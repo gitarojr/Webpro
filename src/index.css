@@ -1,0 +1,204 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', system-ui, sans-serif;
+  background: #f6f1eb;
+  color: #3b2a20;
+}
+
+.app {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 16px 24px;
+}
+
+.header {
+  text-align: center;
+  padding: 32px 16px 16px;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 2rem;
+  color: #5a3825;
+}
+
+.header p {
+  margin: 8px 0 0;
+  color: #7a6355;
+}
+
+.konten {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.ringkasan {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+.ringkasan-item {
+  background: #5a3825;
+  color: #fff;
+  border-radius: 12px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ringkasan-angka {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.ringkasan-label {
+  font-size: 0.85rem;
+  opacity: 0.85;
+}
+
+.kartu-form,
+.daftar {
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(90, 56, 37, 0.08);
+}
+
+.kartu-form h2,
+.daftar h2 {
+  margin-top: 0;
+  color: #5a3825;
+}
+
+.form {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 12px;
+  align-items: end;
+}
+
+.form label {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.form input,
+.form select {
+  padding: 10px;
+  border: 1px solid #d8c8bb;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  font-family: inherit;
+}
+
+.form input:focus,
+.form select:focus {
+  outline: 2px solid #b9835a;
+  border-color: #b9835a;
+}
+
+.tombol-tambah {
+  background: #b9835a;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 11px 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.tombol-tambah:hover {
+  background: #a06f48;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 16px;
+}
+
+.kartu-produk {
+  border: 1px solid #eadfd4;
+  border-radius: 12px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  background: #fffaf5;
+}
+
+.kartu-produk h3 {
+  margin: 4px 0;
+  font-size: 1.05rem;
+}
+
+.badge-kategori {
+  align-self: flex-start;
+  background: #ead7c4;
+  color: #5a3825;
+  font-size: 0.75rem;
+  padding: 3px 10px;
+  border-radius: 999px;
+}
+
+.harga {
+  margin: 0;
+  font-weight: 700;
+  color: #8a4b1f;
+}
+
+.stok {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #3f7d4e;
+}
+
+.stok-habis {
+  color: #c0392b;
+  font-weight: 600;
+}
+
+.tombol-hapus {
+  margin-top: auto;
+  background: transparent;
+  color: #c0392b;
+  border: 1px solid #c0392b;
+  border-radius: 8px;
+  padding: 7px;
+  cursor: pointer;
+}
+
+.tombol-hapus:hover {
+  background: #c0392b;
+  color: #fff;
+}
+
+.kosong {
+  text-align: center;
+  color: #7a6355;
+  padding: 24px;
+  font-style: italic;
+}
+
+.footer {
+  text-align: center;
+  margin-top: 24px;
+  font-size: 0.85rem;
+  color: #7a6355;
+}
+
+@media (max-width: 520px) {
+  .ringkasan {
+    grid-template-columns: 1fr;
+  }
+}
